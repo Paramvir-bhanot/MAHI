@@ -1,0 +1,107 @@
+{
+  "site": {
+    "name": "MAHI TRAVEL",
+    "tagline": "Trusted travel & visa solutions",
+    "url": "https://mahi-git-main-paramvir-bhanots-projects.vercel.app",
+    "language": "en-IN",
+    "copyright": "© MAHI TRAVEL. All rights reserved."
+  },
+
+  "contact": {
+    "email": "pvir5577@gmail.com",
+    "phone": "+91-6283063811",
+    "whatsapp": "+91-6283063811",
+    "address": {
+      "line1": "MAHI TRAVEL",
+      "city": "",
+      "state": "",
+      "country": "India",
+      "pincode": ""
+    },
+    "social": {
+      "facebook": "",
+      "instagram": "",
+      "youtube": ""
+    }
+  },
+
+  "branding": {
+    "logoText": "MAHI TRAVEL",
+    "logoStyle": "circle-badge-with-gradient-and-white-text",
+    "primaryColor": "#ffffff",
+    "secondaryColor": "#a0a0a0",
+    "backgroundColor": "#000000",
+    "accentColor": "#f5f5f5",
+    "fontFamilyHeading": "Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+    "fontFamilyBody": "Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+    "borderRadius": "9999px",
+    "elevation": "soft"
+  },
+
+  "business": {
+    "type": "travel_and_visa_agency",
+    "description": "MAHI TRAVEL provides visa assistance, flight booking and complete travel planning services with honest guidance and transparent process.",
+    "usp": [
+      "Genuine guidance for visas and travel",
+      "Document support from start to approval",
+      "Customer-first, transparent service"
+    ]
+  },
+
+  "services": [
+    {
+      "id": "tourist-visa",
+      "name": "Tourist Visa Assistance",
+      "shortDescription": "End-to-end support for tourist visas for popular countries.",
+      "featured": true
+    },
+    {
+      "id": "study-visa",
+      "name": "Study Visa Assistance",
+      "shortDescription": "Guidance for students planning to study abroad.",
+      "featured": true
+    },
+    {
+      "id": "ticket-booking",
+      "name": "Flight Ticket Booking",
+      "shortDescription": "Best options for domestic and international flights.",
+      "featured": false
+    },
+    {
+      "id": "travel-insurance",
+      "name": "Travel Insurance",
+      "shortDescription": "Secure your journey with suitable travel insurance plans.",
+      "featured": false
+    }
+  ],
+
+  "layout": {
+    "sectionsOrder": [
+      "hero",
+      "services",
+      "whyChooseUs",
+      "testimonials",
+      "contact",
+      "faq"
+    ],
+    "hero": {
+      "headline": "Plan your next journey with MAHI TRAVEL",
+      "subheadline": "Visa help, tickets, and complete travel support under one roof.",
+      "primaryCtaText": "Contact Now",
+      "primaryCtaHref": "tel:+916283063811",
+      "secondaryCtaText": "WhatsApp",
+      "secondaryCtaHref": "https://wa.me/916283063811"
+    }
+  },
+
+  "faq": [
+    {
+      "q": "MAHI TRAVEL ka main kaam kya hai?",
+      "a": "Hum visa assistance, flight ticket booking aur complete travel planning provide karte hain, jisme honest guidance aur clear documentation support shamil hai."
+    },
+    {
+      "q": "Contact ka best tareeka kya hai?",
+      "a": "Aap seedha hume phone ya WhatsApp kar sakte hain: +91-6283063811, ya email karein: pvir5577@gmail.com."
+    }
+  ]
+}

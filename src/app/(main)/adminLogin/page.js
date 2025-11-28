@@ -53,16 +53,19 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen bg-[#e3f1f1] flex justify-center p-7">
+    <div className="min-h-screen bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] flex justify-center p-7">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-center text-4xl sm:text-5xl font-bold text-[#1e90ff]">Admin Login</h1>
+          <h1 className="text-center text-4xl sm:text-5xl font-bold text-white bg-gradient-to-r from-[#CFCFCF] to-[#6A6A6A] bg-clip-text text-transparent">
+            Admin Login
+          </h1>
+          <p className="text-[#B0B0B0] mt-2">Access your MAHI TRAVEL dashboard</p>
         </div>
 
         {error && (
-          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start">
+          <div className="mb-6 p-4 bg-[#2A1A1A] border border-[#8B4513] rounded-lg flex items-start backdrop-blur-sm bg-opacity-50">
             <svg
-              className="h-5 w-5 text-red-500 mt-0.5 mr-2"
+              className="h-5 w-5 text-[#FF6B6B] mt-0.5 mr-2"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -73,23 +76,23 @@ export default function AdminLogin() {
               />
             </svg>
             <div>
-              <h3 className="font-medium text-red-800">Unable to Sign In</h3>
-              <p className="text-sm text-red-600 mt-1">{error}</p>
+              <h3 className="font-medium text-[#FF6B6B]">Unable to Sign In</h3>
+              <p className="text-sm text-[#FF9999] mt-1">{error}</p>
             </div>
           </div>
         )}
 
-        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+        <div className="bg-[#1A1A1A] rounded-xl border border-[#333333] shadow-2xl overflow-hidden backdrop-blur-sm bg-opacity-80">
           <div className="p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-[#E0E0E0] mb-1">
                   Email Address
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg
-                      className="h-5 w-5 text-gray-400"
+                      className="h-5 w-5 text-[#6A6A6A]"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -104,20 +107,20 @@ export default function AdminLogin() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="block w-full pl-10 pr-3 py-3 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out"
+                    className="block w-full pl-10 pr-3 py-3 rounded-lg border border-[#333333] bg-[#0A0A0A] text-white focus:ring-2 focus:ring-[#CFCFCF] focus:border-transparent placeholder-[#6A6A6A] focus:outline-none transition duration-150 ease-in-out"
                     placeholder="admin@example.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="password" className="block text-sm font-medium text-[#E0E0E0] mb-1">
                   Password
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg
-                      className="h-5 w-5 text-gray-400"
+                      className="h-5 w-5 text-[#6A6A6A]"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -135,7 +138,7 @@ export default function AdminLogin() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                    className="block w-full pl-10 pr-10 py-3 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400 focus:outline-none transition duration-150 ease-in-out"
+                    className="block w-full pl-10 pr-10 py-3 rounded-lg border border-[#333333] bg-[#0A0A0A] text-white focus:ring-2 focus:ring-[#CFCFCF] focus:border-transparent placeholder-[#6A6A6A] focus:outline-none transition duration-150 ease-in-out"
                     placeholder="••••••••"
                   />
                   <button
@@ -144,9 +147,9 @@ export default function AdminLogin() {
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? (
-                      <EyeOff className="h-5 w-5 text-gray-400 hover:text-gray-500" />
+                      <EyeOff className="h-5 w-5 text-[#6A6A6A] hover:text-[#CFCFCF]" />
                     ) : (
-                      <Eye className="h-5 w-5 text-gray-400 hover:text-gray-500" />
+                      <Eye className="h-5 w-5 text-[#6A6A6A] hover:text-[#CFCFCF]" />
                     )}
                   </button>
                 </div>
@@ -156,7 +159,11 @@ export default function AdminLogin() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-150 ${loading ? 'bg-blue-400' : 'bg-blue-600 hover:bg-blue-700'}`}
+                  className={`w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-white font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#CFCFCF] transition-all duration-150 ${
+                    loading 
+                      ? 'bg-gradient-to-r from-[#6A6A6A] to-[#8A8A8A] cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-[#CFCFCF] to-[#6A6A6A] hover:from-[#FFFFFF] hover:to-[#8A8A8A] hover:shadow-xl transform hover:-translate-y-0.5'
+                  }`}
                 >
                   {loading ? (
                     <>
